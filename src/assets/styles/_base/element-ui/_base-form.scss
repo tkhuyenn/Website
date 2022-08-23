@@ -1,0 +1,150 @@
+.el-input__clear {
+  color: #89909e !important;
+}
+.el-icon-circle-close:before {
+  content: '\e79d' !important;
+  position: relative;
+  top: 2px !important;
+}
+//reset form
+.el-form {
+  .el-form-item {
+    margin-bottom: 24px;
+    &__label {
+      // line-height: 1;
+      padding-bottom: 8px;
+      color: var(--bc-form-label);
+      width: 100%;
+      text-align: left;
+      padding-right: 0;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+    }
+    &__error {
+      color: var(--bc-status-error);
+    }
+    .el-input {
+      input[type='text'],
+      input[type='password'],
+      input[type='email'],
+      input[type='number'] {
+        height: 48px;
+        line-height: 48px;
+        font-size: 16px;
+        color: #0a0b0d;
+      }
+      &__inner {
+        border-color: var(--bc-input-border);
+        color: var(--bc-form-input);
+        &:hover {
+          border-color: var(--bc-input-hover-border);
+          //  border-image: linear-gradient(to right, #9d3ef2, #3036f4) 1;
+        }
+        &:focus {
+          border-color: var(--bc-input-focus-border);
+        }
+      }
+    }
+
+    .el-select {
+      .el-input {
+        input {
+          height: 48px;
+          line-height: 48px;
+        }
+      }
+    }
+
+    .is-disabled {
+      .el-input__inner {
+        background-color: #f3f2f1;
+      }
+    }
+  }
+  .el-form-item.hide-label {
+    .el-form-item__label {
+      visibility: hidden;
+    }
+  }
+  .el-form-item.is-error {
+    .el-input__inner {
+      border-color: var(--bc-status-error);
+    }
+  }
+  .el-form-item.is-required {
+    .el-form-item__label {
+      &::before {
+        display: none;
+      }
+      &::after {
+        content: '*';
+        color: #f56c6c;
+        margin-left: 4px;
+      }
+    }
+  }
+  .el-checkbox {
+    &__input {
+      .el-checkbox__inner {
+        width: 20px;
+        height: 20px;
+        border-color: var(--bc-cb-border);
+      }
+    }
+  }
+  .el-checkbox.is-checked {
+    .el-checkbox__input {
+      .el-checkbox__inner {
+        border-color: transparent;
+        background-color: var(--bc-cb-bg-checked);
+      }
+    }
+  }
+  .no-require-label {
+    .el-form-item__label {
+      &::before {
+        content: '' !important;
+        margin: 0 !important;
+      }
+    }
+  }
+  .input-password {
+    .el-input__suffix {
+      .el-input__icon {
+        font-size: 22px;
+        color: #a19f9d;
+        // margin-top: 4px;
+      }
+    }
+  }
+}
+
+//form marketplace
+.el-form.form-market {
+  .el-form-item {
+    &__label {
+      // line-height: 1;
+      padding-bottom: 6px;
+      color: var(--bc-text-market-primary);
+      width: 100%;
+      text-align: left;
+      padding-right: 0;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      opacity: 0.7;
+    }
+    .el-input {
+      input[type='text'],
+      input[type='password'],
+      input[type='email'],
+      input[type='number'] {
+        height: 24px;
+        line-height: 24px;
+        font-size: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+}

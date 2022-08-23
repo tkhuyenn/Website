@@ -1,0 +1,56 @@
+.nft-header2 {
+  font-size: 48px;
+  line-height: 64px;
+}
+.nft-header3 {
+  font-size: 40px;
+  line-height: 56px;
+}
+.nft-header4 {
+  font-size: 32px;
+  line-height: 48px;
+}
+.nft-header5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.nft-header6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.nft-body-small {
+  font-size: 14px;
+  line-height: 24px;
+}
+.nft-body-large {
+  font-size: 20px;
+  line-height: 24px;
+}
+.nft-body-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+.nft-body-base-small {
+  font-size: 14px;
+  line-height: 20px;
+}
+.nft-body-caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.color-favourite {
+  color: var(--bc-text-favourite);
+}
+.text-base-nft {
+  * {
+    color: var(--bc-text-market-primary-nft);
+  }
+}
+
+.text-disabled {
+  color: var(--bc-text-disabled);
+}
+.text-gray1 {
+  color: var(--bc-text-gray1) !important;
+}

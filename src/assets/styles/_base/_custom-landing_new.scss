@@ -1,0 +1,284 @@
+.main-about {
+  .el-dialog {
+    width: 90%;
+    max-width: 1280px;
+    background: #21242a;
+    margin-top: 10vh !important;
+    padding-bottom: 24px;
+    @media (max-width: 767px) {
+      padding-bottom: 16px;
+    }
+  }
+  .el-dialog__body {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-y: scroll;
+    height: 60vh;
+    padding-bottom: 0 !important;
+    padding-top: 0;
+    scroll-snap-align: start;
+  }
+  .el-dialog__body::-webkit-scrollbar {
+    width: 5px;
+  }
+  .el-dialog__body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .el-dialog__body::-webkit-scrollbar-thumb {
+    background: #5a6273;
+    border-radius: 20px;
+  }
+  .el-dialog__headerbtn .el-dialog__close {
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
+.banner {
+  .el-progress-bar__inner {
+    background: linear-gradient(90deg, rgba(142, 36, 170, 0.1) 0%, #ff08ff 100%) !important;
+  }
+  .el-progress-bar__outer {
+    height: 8px !important;
+    border: 1px solid #d0d5dd !important;
+    background: transparent !important;
+  }
+  .el-dialog {
+    background-color: #21242a;
+    width: 90%;
+    margin-top: 10vh !important;
+    height: 80vh;
+    max-width: 1378px;
+
+    .el-dialog__header {
+      padding: 0;
+      .el-dialog__headerbtn {
+        right: -30px;
+        top: -30px;
+      }
+    }
+    .el-dialog__body {
+      padding: 0;
+    }
+    .el-dialog__close {
+      font-size: 30px;
+    }
+  }
+  video.bg-vid {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+  }
+  @media (max-width: 450px) {
+    .el-dialog {
+      height: 50vh;
+      margin-top: 20vh !important;
+      .el-dialog__header {
+        .el-dialog__headerbtn {
+          right: -16px;
+          top: -30px;
+        }
+      }
+    }
+    video.bg-vid {
+      height: 50vh;
+    }
+  }
+}
+.wrap-faq {
+  .is-active.el-collapse-item__arrow::before {
+    content: url('https://s3.cloud.cmctelecom.vn/bework-production/task/district/1/2022/3/14/82735_1647237015251.png') !important;
+    color: #ffffff;
+    @media (max-width: 767px) {
+      content: url('https://s3.cloud.cmctelecom.vn/bework-production/task/district/1/2022/3/14/82741_1647237528502.png') !important;
+    }
+  }
+  .el-icon-arrow-right:before {
+    content: url('https://s3.cloud.cmctelecom.vn/bework-production/task/district/1/2022/3/14/82732_1647236800425.png') !important;
+    color: #ffffff;
+    @media (max-width: 767px) {
+      content: url('https://s3.cloud.cmctelecom.vn/bework-production/task/district/1/2022/3/14/82740_1647237516047.png') !important;
+    }
+  }
+  .el-icon-arrow-right {
+    width: 32px;
+    height: 32px;
+  }
+
+  .el-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: unset;
+    &-item {
+      &__wrap {
+        background-color: transparent;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      &__header {
+        padding: 40px 0;
+        background-color: transparent;
+        color: #fff;
+        font-size: 24px;
+        line-height: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-right: 10px;
+        // height: 120px !important;
+        padding: 60px 0;
+        font-family: archivo-expanded;
+        //&:hover{
+        //  background-color: #21242A;
+        //}
+      }
+      .is-active {
+        border: none;
+      }
+      &__content {
+        color: #fff;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1700px) {
+    .el-collapse {
+      margin: 0 20px;
+    }
+  }
+
+  @media (min-width: 740px) and (max-width: 1023px) {
+  }
+
+  @media (max-width: 739px) {
+    .el-collapse {
+      &-item {
+        &__wrap {
+        }
+        &__header {
+          height: auto;
+          font-size: 18px;
+          line-height: 25px;
+          color: #e4e7ec;
+          padding: 13px 0 !important;
+          padding-right: 0px;
+        }
+        &__content {
+          font-size: 18px;
+          color: #e4e7ec;
+        }
+      }
+    }
+    .el-collapse-item:nth-child(1) {
+      .el-collapse-item__content {
+        &:nth-child(1) {
+          margin-top: 25px !important;
+        }
+      }
+    }
+    .el-icon-arrow-right {
+      margin-left: 10px;
+    }
+    .is-active.el-collapse-item__arrow::before {
+      font-size: 15px;
+    }
+    .el-icon-arrow-right:before {
+      font-size: 30px;
+    }
+  }
+}
+.landing-footer {
+  @media (max-width: 768px) {
+    svg {
+      width: 24px;
+      height: 24px;
+      font-size: 24px !important;
+    }
+  }
+}
+.excecutive-new,
+.board-member-new,
+.number-advisors-new,
+.number-ambassador-new {
+  .el-dialog {
+    width: 90%;
+    max-width: 1280px;
+    background: #21242a;
+    margin-top: 25vh !important;
+    @media (max-width: 767px) {
+      margin-top: 15vh !important;
+    }
+  }
+  .el-dialog__body {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-y: scroll;
+    padding-top: 0;
+    scroll-snap-align: start;
+    @media (max-width: 767px) {
+      height: 60vh;
+    }
+  }
+  .el-dialog__body::-webkit-scrollbar {
+    width: 5px;
+  }
+  .el-dialog__body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .el-dialog__body::-webkit-scrollbar-thumb {
+    background: #5a6273;
+    border-radius: 20px;
+  }
+  .el-dialog__headerbtn .el-dialog__close {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .dialog-team {
+    p:first-child {
+      font-size: 48px;
+      line-height: 57.6px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .team-title {
+      margin-bottom: 48px;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 400;
+      color: #fff;
+    }
+    @media (min-width: 740px) and (max-width: 1024px) {
+      p:first-child {
+        font-size: 32px !important;
+        line-height: 57.6px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 739px) {
+      p:first-child {
+        font-size: 34px;
+        line-height: 57.6px;
+        margin-bottom: 15px;
+      }
+      .team-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 36px;
+      }
+      p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+  }
+}

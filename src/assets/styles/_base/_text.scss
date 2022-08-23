@@ -1,0 +1,130 @@
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 16px;
+}
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-base1 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.text-body-small {
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-l {
+  font-size: 18px;
+  line-height: 24px;
+}
+.text-0xl {
+  font-size: 20px;
+  line-height: 24px;
+}
+.text-xl {
+  font-size: 20px;
+  line-height: 30px;
+}
+.text-1xl {
+  font-size: 24px;
+  line-height: 32px;
+}
+.text-2xl {
+  font-size: 24px;
+  line-height: 36px;
+}
+.text-3xl {
+  font-size: 30px;
+  line-height: 45px;
+}
+.text-4xl {
+  font-size: 36px;
+  line-height: 54px;
+}
+.text-5xl {
+  font-size: 48px;
+  line-height: 48px;
+}
+.text-6xl {
+  font-size: 60px;
+  line-height: 60px;
+}
+.text-7xl {
+  font-size: 48px;
+  line-height: 64px;
+}
+.text-8xl {
+  font-size: 64px;
+  line-height: 14px;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-bold-1 {
+  font-weight: 700;
+}
+
+.text-hyperlink {
+  color: var(--bc-text-hyperlink);
+}
+
+.text-grey-130 {
+  color: var(--bc-color-grey130);
+}
+.text-grey-190 {
+  color: var(--bc-color-grey190);
+}
+.text-error {
+  color: var(--bc-status-error) !important;
+  -webkit-text-fill-color: unset !important;
+  background: none !important;
+}
+.color-primary {
+  color: var(--bc-text-primary);
+}
+
+.text-desc {
+  color: var(--bc-text-discript) !important;
+}
+.text-discrip2 {
+  color: var(--bc-text-discript2);
+}
+.text-discrip3 {
+  color: var(--bc-text-discript3);
+}
+.text-description {
+  color: var(--bc-text-des);
+}
+.text-overflow-1 {
+  @include text-overflow;
+  -webkit-line-clamp: 1;
+}
+.text-overflow-2 {
+  @include text-overflow;
+  -webkit-line-clamp: 2;
+}
+.text-overflow-3 {
+  @include text-overflow;
+  -webkit-line-clamp: 3;
+}
+.text-overflow-4 {
+  @include text-overflow;
+  -webkit-line-clamp: 4;
+}
+.text-line-through {
+  text-decoration: line-through;
+}

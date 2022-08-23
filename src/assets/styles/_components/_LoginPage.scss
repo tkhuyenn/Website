@@ -1,0 +1,53 @@
+.bc-login {
+    .form {
+        .el-checkbox {
+            .el-checkbox__inner {
+                width: 20px;
+                height: 20px;
+                border-color: var(--bc-cb-border);
+                &::after {
+                    height: 10px;
+                    left: 7px;
+                    top: 3px;
+                }
+            }
+        }
+        .is-checked {
+            .el-checkbox__inner {
+                background-color: var(--bc-cb-bg);
+            }
+            .el-checkbox__label {
+                color: var(--bc-color-grey190);
+            }
+        }
+        &__label {
+            font-size: 16px;
+        }
+        .bc-verify {
+            .verify-code {
+                .el-form-item__label {
+                    font-size: 16px;
+                    color: var(--bc-color-grey130);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bc-login {
+        .form {
+            .el-form {
+                &-item {
+                    .el-input {
+                        // input {
+                        //     height: 40px;
+                        //     line-height: 40px;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+$font-stack: 'Open Sans', sans-serif;
+
+//font 2
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
+$font-anchor: 'Archivo', sans-serif;
+
+@import './resret';
+@import './element-ui/index';
+@import './button';
+@import './text';
+@import './space';
+@import './amount';
+@import './class-custom-landing';
+@import './class-custom';
+@import './grid.scss';
+@import './marketplace/text.scss';
+@import './marketplace/layout';
+@import './nft';
+@import './_custom-landing_new';
+@import './custom_mobile';
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: $font-stack;
+  box-sizing: border-box;
+}
+.home-lang {
+  font-family: $font-anchor !important;
+}
+body {
+  margin: 0;
+  color: var(--bc-text-primary);
+  @include font-size(14);
+  font-family: $font-stack;
+  font-weight: 400;
+}

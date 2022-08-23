@@ -1,0 +1,47 @@
+// reset select
+.el-select {
+    .el-input {
+        .el-input__inner {
+            border-color: var(--bc-select-border);
+            &:focus {
+                border-color: var(--bc-select-border);
+            }
+        }
+        &__suffix {
+            .el-input__suffix-inner {
+                .el-select__caret {
+                    color: #89909e;
+                }
+            }
+        }
+    }
+    .is-focus {
+        .el-input__inner {
+            border-color: var(--bc-select-border) !important;
+        }
+    }
+}
+#main-header{
+    .el-select {
+        .el-input {
+            .el-input__inner {
+                border-color: var(--bc-select-border);
+                &:focus {
+                    border-color: var(--bc-select-border);
+                }
+            }
+            &__suffix {
+                .el-input__suffix-inner {
+                    .el-select__caret {
+                        color: #5B616E;
+                    }
+                }
+            }
+        }
+        .is-focus {
+            .el-input__inner {
+                border-color: var(--bc-select-border) !important;
+            }
+        }
+    }
+}

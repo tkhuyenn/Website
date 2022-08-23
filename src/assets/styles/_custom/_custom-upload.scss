@@ -1,0 +1,18 @@
+.kyc-content {
+  .el-upload-dragger {
+    width: 446px !important;
+    height: 320px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px dashed var(--bc-input-border);
+    .el-upload__text em {
+      color: var(--bc-theme-primary);
+      font-style: normal;
+    }
+  }
+  .el-upload-dragger:hover {
+    border-color: var(--bc-theme-primary);
+  }
+}

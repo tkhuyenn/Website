@@ -1,0 +1,108 @@
+.wrap-home-mobile {
+  .title-tab-mobile {
+    .tab-item {
+      padding: 4px 8px !important;
+    }
+    .nft-body-small {
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
+  }
+  .collection-item-mobile {
+    height: 192px;
+    margin-bottom: 0px !important;
+    .nft-item {
+      max-height: 100% !important;
+      .item {
+        width: 246px !important;
+        margin-bottom: 20px !important;
+        .info {
+          margin-left: 12px !important;
+          .avatar {
+            height: 40px !important;
+            width: 40px !important;
+            margin-right: 12px !important;
+            img {
+              height: 40px !important;
+              width: 40px !important;
+            }
+          }
+        }
+        .index {
+          color: var(--bc-text-disabled);
+        }
+      }
+    }
+  }
+  .nft-body-small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .hot-carousel-item-mobile {
+    display: flex;
+    overflow: auto;
+    margin-bottom: 24px;
+    .item {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    .hot-nft-item-mobile {
+      width: 310px;
+
+      .avatar {
+        width: 310px !important;
+        height: 310px !important;
+      }
+    }
+  }
+  .explore-nft-mobile {
+    .explore-nft-item {
+      width: 310px;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .avatar {
+        width: 100%;
+        height: 310px;
+      }
+    }
+
+    // .explore-nft-item {
+    //   margin-right: 20px;
+    // }
+  }
+}
+.collection-item-child-clm {
+  @media (max-width: 1200px) {
+    height: 205px;
+    margin-bottom: 0px !important;
+    .nft-item {
+      max-height: 100% !important;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .item {
+        width: 246px !important;
+        margin-bottom: 20px !important;
+        .info {
+          margin-left: 12px !important;
+          .avatar {
+            height: 40px !important;
+            width: 40px !important;
+            margin-right: 12px !important;
+            img {
+              height: 40px !important;
+              width: 40px !important;
+            }
+          }
+        }
+        .index {
+          color: var(--bc-text-primary);
+        }
+      }
+    }
+  }
+}

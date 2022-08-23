@@ -1,0 +1,459 @@
+<template>
+  <div class="member number-ambassador-new" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container-lang">
+      <div class="content">
+        <div class="btn-swi swiper-button-prev2"></div>
+        <div>
+          <h1>{{ $t('landing-ido.advisors_meet-our-team') }}</h1>
+          <div class="title">{{ $t('landing-ido.ambassador_title') }}</div>
+        </div>
+        <div class="btn-swi swiper-button-next2"></div>
+      </div>
+      <div class="swiper1">
+        <swiper class="board" :options="swiperOption">
+          <swiper-slide class="board-member">
+            <div style="cursor: pointer" @click="handleClickMember(1)">
+              <div class="member-img">
+                <img src="../../../assets/images/landing/executive1.png" alt="" />
+              </div>
+              <div class="des-member">
+                <div class="text-name">Jonathon Gowen</div>
+                <div class="job-member">{{ $t('landing-ido.executive_job-member4') }}</div>
+              </div>
+              <div class="detail">
+                <div class="view-detail">{{ $t('landing-ido.executive_view-detail') }}</div>
+                <div class="icon-detail">
+                  <span>
+                    <img src="./../../../assets/images/landing/fi_arrow-right.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="board-member">
+            <div>
+              <div class="member-img">
+                <img src="../../../assets/images/landing/team/Jorge-Sebastiao.png" alt="" />
+              </div>
+              <div class="des-member">
+                <div class="text-name">Jorge Sebastiao</div>
+                <!-- <div class="job-member">{{ $t('landing-ido.advisors_job-member2') }}</div> -->
+                <div class="job-member"></div>
+              </div>
+              <div class="detail">
+                <div class="view-detail">{{ $t('landing-ido.advisors_view-detail') }}</div>
+                <div class="icon-detail">
+                  <span>
+                    <img src="./../../../assets/images/landing/fi_arrow-right.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="board-member">
+            <div @click="handleClickMember(2)">
+              <div class="member-img">
+                <img src="../../../assets/images/landing/team/Micheal-Turpin.jpg" alt="" />
+              </div>
+              <div class="des-member">
+                <div class="text-name">Michael Terpin</div>
+                <div class="job-member">{{ $t('landing-ido.advisors_job-member2') }}</div>
+              </div>
+              <div class="detail">
+                <div class="view-detail">{{ $t('landing-ido.advisors_view-detail') }}</div>
+                <div class="icon-detail">
+                  <span>
+                    <img src="./../../../assets/images/landing/fi_arrow-right.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="board-member">
+            <div @click="handleClickMember(3)">
+              <div class="member-img">
+                <img src="../../../assets/images/landing/team/peter-kristensen.png" alt="" />
+              </div>
+              <div class="des-member">
+                <div class="text-name">Peter Kristensen</div>
+                <!-- <div class="job-member">{{ $t('landing-ido.advisors_job-member3') }}</div> -->
+                <div class="job-member"></div>
+              </div>
+              <div class="detail">
+                <div class="view-detail">{{ $t('landing-ido.advisors_view-detail') }}</div>
+                <div class="icon-detail">
+                  <span>
+                    <img src="./../../../assets/images/landing/fi_arrow-right.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="board-member">
+            <div @click="handleClickMember(4)">
+              <div class="member-img">
+                <img src="../../../assets/images/landing/team/simon-cocking.png" alt="" />
+              </div>
+              <div class="des-member">
+                <div class="text-name">Simon Cocking</div>
+                <div class="job-member"></div>
+                <!-- <div class="job-member">{{ $t('landing-ido.advisors_job-member4') }}</div> -->
+              </div>
+              <div class="detail">
+                <div class="view-detail">{{ $t('landing-ido.advisors_view-detail') }}</div>
+                <div class="icon-detail">
+                  <span>
+                    <img src="./../../../assets/images/landing/fi_arrow-right.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+        <el-dialog title="" :visible.sync="dialogViewNumber">
+          <div v-if="dialogViewNumber == true" class="dialog-team">
+            <p>{{ detail.name }}</p>
+            <p class="team-title">{{ detail.title }}</p>
+            <p>{{ detail.desc }}</p>
+          </div></el-dialog
+        >
+        <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+  import 'swiper/swiper-bundle.css'
+  import Vue from 'vue'
+  import { Swiper as SwiperClass, Navigation } from 'swiper/swiper.esm'
+  import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+  SwiperClass.use([Navigation])
+  Vue.use(getAwesomeSwiper(SwiperClass))
+  const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
+
+  // import 'swiper/css/swiper.css'
+  export default {
+    name: 'LandingAmbassador',
+    title: 'Loop mode with multiple slides per group',
+    components: {
+      Swiper,
+      SwiperSlide
+    },
+    data() {
+      return {
+        swiperOption: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+          breakpoints: {
+            280: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+              grabCursor: true
+            },
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+              grabCursor: true
+            },
+            375: {
+              slidesPerView: 2.3,
+              spaceBetween: 35,
+              grabCursor: true
+            },
+            400: {
+              slidesPerView: 2.3,
+              spaceBetween: 9,
+              grabCursor: true
+            },
+            640: {
+              slidesPerView: 2.5,
+              spaceBetween: 16,
+              grabCursor: true
+            },
+            786: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+              // centeredSlides: true,
+              grabCursor: true
+            },
+            1000: {
+              slidesPerView: 2.5,
+              spaceBetween: 24
+            },
+            1300: {
+              slidesPerView: 4,
+              spaceBetween: 24
+            },
+            1400: {
+              slidesPerView: 4,
+              spaceBetween: 24
+            },
+            1770: {
+              slidesPerView: 4,
+              spaceBetween: 24
+            }
+          },
+
+          navigation: {
+            nextEl: '.swiper-button-next2',
+            prevEl: '.swiper-button-prev2'
+          }
+        },
+        dialogViewNumber: false,
+        detail: {},
+        teamList: [
+          {
+            id: 1,
+            name: 'Jonathon Gowen',
+            title: this.$i18n.t('landing-ido.executive_list-title4'),
+            desc: this.$i18n.t('landing-ido.executive_list-desc4')
+          },
+          {
+            id: 2,
+            name: 'Michael Terpin',
+            title: this.$i18n.t('landing-ido.advisors_list-title4'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc4')
+          },
+          {
+            id: 5,
+            name: 'Hilton Supra',
+            title: this.$i18n.t('landing-ido.executive_list-title1'),
+            desc: this.$i18n.t('landing-ido.executive_list-desc1')
+          },
+          {
+            id: 10,
+            name: 'Javed Khattak',
+            title: this.$i18n.t('landing-ido.advisors_list-title1'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc1')
+          },
+          {
+            id: 11,
+            name: 'Peter Kristensen',
+            title: this.$i18n.t('landing-ido.advisors_list-title2'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc2')
+          },
+          {
+            id: 12,
+            name: 'Thomas Le',
+            title: this.$i18n.t('landing-ido.advisors_list-title3'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc3')
+          },
+
+          {
+            id: 14,
+            name: 'Yechuan Charlie Hu',
+            title: this.$i18n.t('landing-ido.advisors_list-title5'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc5')
+          },
+          {
+            id: 15,
+            name: 'Michael Sung',
+            title: this.$i18n.t('landing-ido.advisors_list-title6'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc6')
+          },
+          {
+            id: 16,
+            name: 'Nitin Kalra',
+            title: this.$i18n.t('landing-ido.advisors_list-title7'),
+            desc: this.$i18n.t('landing-ido.advisors_list-desc7')
+          }
+        ]
+      }
+    },
+    methods: {
+      handleClickMember(id) {
+        this.detail = this.teamList.filter(item => item.id === id)[0]
+        this.dialogViewNumber = true
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+  .member {
+    position: relative;
+    padding-bottom: 120px;
+    color: rgba(255, 255, 255, 1);
+    .content {
+      text-align: center;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .swiper-button-prev2 {
+        margin-top: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        content: url(../../../assets/images/landing/swiper-prev.png);
+        cursor: pointer;
+      }
+      .swiper-button-next2 {
+        content: url(../../../assets/images/landing/swiper-next.png);
+        margin-top: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        cursor: pointer;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 12px;
+      }
+      .title {
+        font-size: 36px;
+        line-height: 44px;
+        font-family: archivo-expanded;
+      }
+    }
+    .board {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      overflow: hidden;
+      .board-member {
+        // margin: 0 8px;
+        cursor: pointer;
+        .member-img {
+          //   width: 100%;
+          //   max-width: 342px;
+          height: 342px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .des-member {
+          margin: 24px 0;
+          .text-name {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 12px;
+            font-family: archivo-expanded;
+          }
+          .job-member {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            height: 48px;
+          }
+        }
+        .detail {
+          display: flex;
+          height: 49px;
+          align-items: center;
+          border-bottom: 1px solid #ffffff24;
+          padding-bottom: 24px;
+          cursor: pointer;
+          .view-detail {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 24px;
+          }
+          .icon-detail {
+            margin-top: 4px;
+            :hover {
+              cursor: pointer;
+            }
+            :active {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .member .content {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 767px) {
+    .container-lang {
+      padding-right: 0 !important;
+    }
+    .content {
+      text-align: start !important;
+      margin-bottom: 24px !important;
+      justify-content: space-between !important;
+      .btn-carousel {
+        display: none !important;
+      }
+      h1 {
+        font-size: 14px !important;
+        margin-bottom: 4px !important;
+      }
+      .title {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+      }
+    }
+    .board {
+      // grid-template-columns: 1fr 1fr !important;
+      .board-member {
+        .member-img {
+          height: auto !important;
+        }
+        img {
+          width: 100%;
+        }
+        .des-member {
+          margin-top: 8px !important;
+          height: 102px;
+          .text-name {
+            margin-bottom: 0px !important;
+            font-size: 18px !important;
+            line-height: 27px !important;
+          }
+          .job-member {
+            font-size: 12px !important;
+            // height: 72px;
+            line-height: 18px !important;
+          }
+        }
+      }
+      .detail {
+        .view-detail {
+          font-size: 14px !important;
+          margin-right: 16px !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .btn-swi {
+      display: none !important;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 430px) {
+    .container-lang {
+      padding-right: 0px !important;
+    }
+    .board {
+      .board-member {
+        .member-img {
+          img {
+            width: 154px !important;
+            height: 154px;
+          }
+        }
+      }
+      .detail {
+        width: 154px !important;
+      }
+    }
+  }
+</style>

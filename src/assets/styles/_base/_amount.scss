@@ -1,0 +1,70 @@
+.amount-decrease {
+    color: var(--bc-status-error);
+}
+.amount-increase {
+    color: var(--bc-status-success);
+}
+
+.amount-btc {
+    color: var(--bc-amount-btc);
+}
+.amount-bnb {
+    color: var(--bc-amount-bnb);
+}
+.amount-eth {
+    color: var(--bc-amount-eth);
+}
+.amount-usdt {
+    color: var(--bc-amount-usdt);
+}
+.amount-usdc {
+    color: var(--bc-amount-usdc);
+}
+.amount-busd {
+    color: var(--bc-amount-busd);
+}
+.amount-lyn {
+    // color: var(--bc-amount-lin);
+    background: var(--bc-menu-active);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.amount-LYNK {
+    // color: var(--bc-amount-lin);
+    background: var(--bc-menu-active);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.amount-clm {
+    color: var(--bc-amount-clm);
+}
+.amount-lock {
+    color: var(--bc-amount-lock);
+}
+.amount-BTC {
+    color: var(--bc-amount-btc);
+}
+.amount-BNB {
+    color: var(--bc-amount-bnb);
+}
+.amount-ETH {
+    color: var(--bc-amount-eth);
+}
+.amount-USDT {
+    color: var(--bc-amount-usdt);
+}
+.amount-USDC {
+    color: var(--bc-amount-usdc);
+}
+.amount-CLM {
+    color: var(--bc-amount-clm);
+}
+.amount-BUSD {
+    color: var(--bc-amount-busd) !important;
+}
+
+.amount-exchange-small {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5b616e;
+}

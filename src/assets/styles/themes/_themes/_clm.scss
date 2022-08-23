@@ -1,0 +1,139 @@
+:root,
+[data-theme='theme-light'] {
+  //theme
+  --bc-theme-primary: #31b6b5;
+  --bc-theme-dark: #0a9d9c;
+  --bc-theme-primary-gradient: #31b6b5;
+  --bc-theme-primary-gradient-hover: #0a9d9c;
+  --bc-theme-darker: #004578;
+
+  //color
+  --bc-color-white: #ffffff;
+  --bc-color-grey10: #faf9f8;
+  --bc-color-grey20: #f3f2f1;
+  --bc-color-grey30: #edebe9;
+  --bc-color-grey40: #e1dfdd;
+  --bc-color-grey50: #d2d0ce;
+  --bc-color-grey60: #c8c6c4;
+  --bc-color-grey90: #a19f9d;
+  --bc-color-grey110: #8a8886;
+  --bc-color-grey130: #605e5c;
+  --bc-color-grey150: #3b3a39;
+  --bc-color-grey190: #201f1e;
+  --bc-color-grey230: #6f7580;
+  --bc-color-gray: #ccc;
+  --bc-color-black: #000;
+  --bc-color-red: #fbedee;
+  --bc-color-buton-disable: #fff;
+
+  // text color
+  --bc-text-primary: #0a0b0d;
+  --bc-text-market-primary: #0e0b23;
+  --bc-text-market-primary-nft: #0a0b0d;
+  --bc-text-menu-header: #0e0b23;
+  --bc-text-color-tab-item: #5b616e;
+  --bc-text-secondary: #605e5c;
+  --bc-text-disabled: #89909e;
+  --bc-text-hyperlink: #31b6b5;
+  --bc-text-tab-buy: #0a9d9c;
+  --bc-text-discript2: #0a0b0d;
+
+  --bc-text-active-marketplace: -webkit-linear-gradient(0deg, #9d3ef2 40.29%, #3036f4 97.93%);
+  --bc-text-favourite: #ff3366;
+  --bc-text-footer-about: #31b6b5;
+  --bc-text-gray1: #687787;
+
+  //color border
+  --bc-input-border: #d2d0ce;
+  --bc-input-hover-border: #0a9d9c;
+  --bc-input-focus-border: #0a9d9c;
+  --bc-border-primary: #d2d0ce;
+  --bc-text-discript: #5b616e;
+  --bc-border-input: #dcdfe6;
+  --bc-tab-buy-border: #0a9d9c;
+
+  //color divider
+  --bc-color-divider: #d2d0ce;
+
+  //color status
+  --bc-bg-error: #fbedee;
+  --bc-bg-success: #e4f9e2;
+  --bc-bg-warning: #fff3e2;
+  --bc-bg-neutral: #f3f2f1;
+  --bc-bg-locked: #f3f2f1;
+
+  --bc-status-error: #cf202f;
+  --bc-required: #cf202f;
+  --bc-status-success: #129961;
+  --bc-status-warning: #dd7d00;
+  --bc-status-neutral: #a19f9d;
+  --bc-status-pending: #a19f9d;
+  --bc-status-locked: #5b616e;
+  //overlay
+  -bc-overlay-light: rgba(255, 255, 255, 0.4);
+  -bc-overlay-dark: rgba(0, 0, 0, 0.4);
+
+  //background
+  --bc-bg-white: #fff;
+  --bc-bg-vefied: #f0f5ff;
+  --bc-bg-market: #faf6f1;
+  --bc-bg-button-disable: #f3f2f1;
+
+  //checkbox
+  --bc-cb-bg: #c4c4c4;
+  --bc-cb-bg-checked: #31b6b5;
+  --bc-cb-border: #d2d0ce;
+
+  //select
+  --bc-select-border: #d2d0ce;
+
+  //tab
+  --bc-tab-active: -webkit-linear-gradient(0deg, #31b6b5 40.29%, #31b6b5 97.93%);
+  --bc-menu-active: -webkit-linear-gradient(0deg, #31b6b5 40.29%, #31b6b5 97.93%);
+  --bc-tab-buy-active-hover: #00bdbb;
+
+  //button
+  --bc-btn-bg: #fff;
+  --bc-btn-disable: #a7dada;
+  --bc-btn-bg-hover: #0078d4;
+  --bc-btn-border: #d2d0ce;
+  --bc-btn-text: #3b3a39;
+  --bc-btn-default-text-hover: #0a9d9c;
+  --bc-btn-default-border-hover: #0a9d9c;
+  --bc-btn-bg-default-hover: #0a9d9c;
+  --bc-btn-bg-default: #31b6b5;
+
+  //amount
+  --bc-amount-btc: #f7931a;
+  --bc-amount-bnb: rgb(244, 187, 39);
+  --bc-amount-busd: #f4bb27;
+  --bc-amount-eth: #627eea;
+  --bc-amount-usdt: #26a17b;
+  --bc-amount-usdc: #2a6bd9;
+  --bc-amount-lin: #0151fc;
+  --bc-amount-clm: #51c1b0;
+  --bc-amount-lock: #89909e;
+
+  //table
+  --bc-table-text-color: #201f1e;
+  --bc-table-border: #dbdbdb;
+  --bc-table-row-hover: #f3f3f3;
+
+  //form
+  --bc-form-label: #0a0b0d;
+  --bc-form-input: #0a0b0d;
+  //shadow
+  --bc-box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+  //checkbox
+  --bc-bg-checkbox: #31b6b5;
+  --bc-bg-checkbox-disabled: #3fbdbc;
+
+  //popup
+  --bc-icon-close-popup: #31b6b5;
+
+  //color dropdown
+  --bc-color-dropdown: -webkit-linear-gradient(0deg, #31b6b5 40.29%, #31b6b5 97.93%);
+
+  //paging
+  --bc-paging-boder: linear-gradient(to right, #31b6b5, #31b6b5) 1;
+}

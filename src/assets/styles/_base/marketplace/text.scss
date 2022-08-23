@@ -1,0 +1,45 @@
+.header-1 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2%;
+}
+.header-2 {
+    font-size: 48px;
+    line-height: 64px;
+}
+.header-3 {
+    font-size: 40px;
+    line-height: 56px;
+}
+.header-4 {
+    font-size: 32px;
+    line-height: 48px;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+.header-5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.header-6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.body-large {
+    font-size: 20px;
+    line-height: 24px;
+}
+.body-base {
+    font-size: 16px;
+    line-height: 24px;
+}
+.body-small {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text-market-primary {
+    color: var(--bc-text-market-primary);
+}

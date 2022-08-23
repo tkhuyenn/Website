@@ -1,0 +1,271 @@
+.sack-detail-nft,
+.popup-tour-details {
+  .empty-block.empty {
+    text-align: center;
+  }
+  p.empty-text {
+    color: #909399;
+    margin-top: 20px;
+  }
+}
+.popup-tour-details {
+  .empty-block.empty {
+    text-align: center;
+    margin-bottom: 46px;
+  }
+}
+
+.sack-detail-nft {
+  .empty-block.empty {
+    margin-bottom: 42px;
+  }
+}
+.content-detail {
+  .empty-block {
+    .span-icon {
+      font-size: 150px !important;
+    }
+  }
+  .el-collapse-item__header {
+    height: 76px;
+  }
+  .el-collapse-item__content {
+    padding-bottom: 16px;
+  }
+  .el-collapse-item__header.is-active {
+    border-bottom-color: var(--bc-table-border);
+  }
+  .el-collapse-item:last-of-type .el-collapse-item__header {
+    border-bottom: none;
+  }
+  .el-collapse-item__header {
+    border-bottom: 1px solid var(--bc-table-border);
+  }
+
+  i.el-collapse-item__arrow.el-icon-arrow-right {
+    color: var(--bc-text-discript);
+  }
+  .el-collapse {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  // @media (max-width: 1200px) {
+  //   .content-detail {
+  //     .click {
+  //       width: 40px;
+  //       height: 40px;
+  //     }
+  //   }
+  // }
+}
+@media (max-width: 1200px) {
+  .detail-nft .tab {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .relate-nft-item-mobile {
+    .avatar {
+      width: 100% !important;
+    }
+  }
+  .filter-detail-nft-mobile {
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+    .form-filter {
+      width: 100%;
+    }
+    .select-status {
+      width: 100%;
+      .el-select {
+        width: 100%;
+        .el-input {
+          width: unset !important;
+          .el-input__inner {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    .el-select {
+      width: 100%;
+    }
+    .drawer .el-select .el-input .el-input__inner {
+      width: 100% !important;
+    }
+  }
+}
+h1.title-tour {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.popup-tour-details,
+.content-schedule,
+.about-market,
+.ck-text-description {
+  strong,
+  b {
+    font-weight: bold;
+    line-height: 22px;
+    word-break: break-word;
+  }
+  i {
+    font-style: italic;
+    word-break: break-word;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 48px;
+    word-break: break-word;
+  }
+  ol {
+    list-style: decimal;
+    padding-left: 48px;
+    word-break: break-word;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    line-height: 40px;
+    word-break: break-word;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18.72px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 13.28px;
+  }
+  h6 {
+    font-size: 10.72px;
+  }
+  p {
+    padding: 10px 0;
+    word-break: break-word;
+  }
+  span,
+  div {
+    word-break: break-word;
+  }
+  .el-icon-close {
+    font-style: normal;
+  }
+}
+.popup-tour-details {
+  .ck-content {
+    padding-bottom: 24px;
+  }
+}
+.ck-text-description {
+  .ck-content p:first-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.about-market,
+.ck-text-description {
+  ul {
+    li::before {
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      margin-right: 13px;
+      background: var(--bc-text-discript);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    li::marker {
+      color: transparent;
+    }
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.sack-detail-nft {
+  .content-media-avatar {
+    img,
+    video {
+      width: 630px !important;
+      height: 630px !important;
+    }
+    height: auto !important;
+    .content-media {
+      display: unset !important;
+    }
+
+    @media (max-width: 767px) {
+      height: 375px !important;
+      max-width: 375px !important;
+      width: 100% !important;
+      margin-left: 0px;
+      margin: 0 auto;
+    }
+    @media (max-width: 375px) {
+      height: 375px !important;
+      width: 375px !important;
+      margin-left: -20px;
+    }
+  }
+  .swiper-container {
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  span.span-icon.d-iflex {
+    &::after,
+    &::before {
+      display: none !important;
+    }
+  }
+}
+
+.wrap-home-mobile {
+  .nft-item::-webkit-scrollbar,
+  .hot-carousel-item-mobile::-webkit-scrollbar,
+  .list-nft::-webkit-scrollbar,
+  .wrap-banner-silde-two::-webkit-scrollbar {
+    display: none;
+  }
+}
+.popup-fixed-price,
+.popup-timed-auction,
+.popup-open-for-bid {
+  .el-select {
+    width: 100% !important;
+  }
+  .el-tag.el-tag--info {
+    background-color: #f6f8fc;
+    border-color: transparent;
+    color: var(--bc-text-primary);
+  }
+  .el-select .el-tag__close.el-icon-close {
+    background-color: unset;
+    color: var(--bc-text-discript);
+  }
+}
+.popup-open-maketplace {
+  .el-dialog__headerbtn {
+    display: none !important;
+  }
+}
