@@ -3,7 +3,7 @@
     <LandingMenu @click="handleClick" @hidden-contract="handlecontract" />
     <!-- <landing-banner class="banner-pri" :class="{ 'banner-change': changeContract }" /> -->
     <div class="back-asset">
-      <LandingAssets style="margin-top: 40px" />
+      <Home style="margin-top: 40px" />
     </div>
     <div class="back-asset">
       <!-- <landing-ecosystem ref="ecosystem" />
@@ -13,9 +13,9 @@
     </div>
     <!-- <LandingTokenomics ref="token" />
     <LandingFundRaising v-if="show" /> -->
-    <div class="back-blue">
-      <!-- <LangdingVesting /> -->
-    </div>
+    <!-- <div class="back-blue"> -->
+    <!-- <LangdingVesting /> -->
+    <!-- </div> -->
     <!-- <LandingRoadMap ref="roadmap" />
     <landing-about ref="docs" />
     <LandingBoard ref="team" />
@@ -25,7 +25,7 @@
     <LandingPartners ref="partner" />
     <LandingMedia v-if="show" ref="media" />
     <LandingFAQ ref="faqs" /> -->
-    <landing-footer class="footer"/>
+    <landing-footer class="footer" />
 
     <div id="backtop" @click="toTop" v-show="scY > 300">
       <div class="icon-backtop">
@@ -46,7 +46,7 @@
   import LandingPartners from '../components/LandingPartners.vue'
   import LandingExecutive from '../components/LandingExecutive.vue'
   import LandingBoard from '../components/LandingBoard.vue'
-  import LandingAssets from '../components/LandingAssets.vue'
+  import Home from '../components/Home.vue'
   import LandingMarket from '../components/LandingMarket.vue'
   import LangdingVesting from '../components/LandingVesting.vue'
   import LandingTokenomics from '../components/LandingTokenomics.vue'
@@ -70,7 +70,7 @@
       // LandingProduct,
       // LangdingVesting,
       // LandingBoard,
-      LandingAssets,
+      Home,
       // LandingAdvisors,
       // LandingPartners,
       // LandingMedia,
@@ -198,7 +198,7 @@
     .back-asset {
       background: #fff;
       background-repeat: no-repeat;
-      padding-bottom: 20px
+      padding-bottom: 20px;
       // background-position-y: bottom;
       // background-position-x: right;
     }
@@ -227,5 +227,4 @@
     z-index: 900;
     cursor: pointer;
   }
-
 </style>
