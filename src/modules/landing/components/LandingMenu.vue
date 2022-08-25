@@ -1,19 +1,5 @@
 <template>
   <div class="menu-landing-page">
-    <!-- <div class="contract-container" v-if="showContract">
-      <div class="sack-coin">
-        <div class="title" @click="handleOpenTab">
-          {{ $t('landing-ido.menu-title') }}: <span class="is-pc"> 0xef952363C1d990A2fa58F8b379A9fa33bad1dfd1</span> <span class="is-mobile">0xef9...1dfd1</span>
-        </div>
-        <div class="title" @click="handleOpenTabUniswap">
-          <img src="../../../assets/images/landing/logo-uniswap.png" style="width: 24px" alt="" />
-          <p class="is-pc">Uniswap:</p>
-          <span class="is-pc" style="margin-left: 6px"> https://info.uniswap.org/#/pools/0x9275e26bfb23b18bebb07bff45e85110f60963e9 </span>
-          <span class="is-mobile" style="margin-left: 3px">info.uniswap.org/#/pools/0x927...963e9</span>
-        </div>
-      </div>
-      <div class="btn-close" @click="handleContract"><img src="../../../assets/images/landing/close-contract.png" alt="" /></div>
-    </div> -->
     <div class="menu-container">
       <div class="menu-logo">
         <a class="navbar-brand" href="#">
@@ -43,36 +29,6 @@
         </button>
       </div>
       <ul class="sack-item" :class="{ 'sack-item-no-contract': !showContract }">
-        <!-- <li class="menu-item li-item" @click="handleClick('ecosystem')">
-          <div class="menu-link">
-            {{ $t('landing-ido.menu_ecosystem') }}
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
-        <!-- <li class="menu-item li-item" @click="handleClick('product')">
-          <div class="menu-link">
-            {{ $t('landing-ido.menu-product') }}
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
-        <!-- <li class="menu-item li-item" @click="handleClick('marketplace')">
-          <div class="menu-link">
-            <span>{{ $t('landing-ido.menu-marketplace') }}</span>
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
-        <!-- <li class="menu-item li-item" @click="handleClick('exchange')">
-          <div class="menu-link">
-            {{ $t('landing-ido.menu-exchange') }}
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
-        <!-- <li class="menu-item li-item" @click="handleClick('token')">
-          <div class="menu-link">
-            {{ $t('landing-ido.menu-token') }}
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
         <li class="menu-item li-item" @click="handleClick('roadmap')">
           <div class="menu-link">
             <base-icon icon="noti"></base-icon>
@@ -87,99 +43,9 @@
             <i class="sack-menu-effect"></i>
           </div>
         </li>
-
-        <!-- <li class="menu-item li-item" @click="handleClick('team')">
-          <div class="menu-link">
-            {{ $t('landing-ido.menu-team') }}
-            <i class="sack-menu-effect"></i>
-          </div>
-        </li> -->
         <router-link v-if="!isLogin" :to="{ name: 'login' }" tag="li" class="btn-login"> {{ $t('landing-ido.btn-login') }}</router-link>
         <router-link v-else :to="{ name: 'WalletLyn' }" tag="li" class="btn-login btn-wallet">{{ $t('landing-ido.btn-wallet') }}</router-link>
         <a class="btn-login btn-download-app hide-on-mobile" @click="clickDownApp"> {{ $t('landing-ido.btn-download-app') }}</a>
-
-        <!-- <li class="menu-item network">
-          <div class="social_list">
-            <div class="social_iem">
-              <div>
-                <img src="../assets/images/facebook.svg" alt="" />
-              </div>
-            </div>
-            <div class="social_iem">
-              <div>
-                <img src="../assets/images/linkin.svg" alt="" />
-              </div>
-            </div>
-            <div class="social_iem">
-              <div>
-                <img src="../assets/images/youtube.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </li> -->
-        <!-- <li class="menu-item lang1">
-          <div class="language-select-wraper">
-            <el-select v-model="selectLanguage" @change="handleChangeLanguage" placeholder="Choose a language" class="select-language" popper-class="select-language-dropdown">
-              <el-option :label="`${$t('language.en')}`" value="en">
-                <template>
-                  <div class="be-flex flag">
-                    <img src="../assets/images/us-flag.svg" alt="" size="14" style="margin-right: 6px; width: 19px; height: 19px; margin-top: 1px" />
-                    <span class="lang">{{ $t('language.en') }}</span>
-                  </div>
-                </template>
-              </el-option>
-              <el-option :label="`${$t('language.vi')}`" value="vi">
-                <template>
-                  <div class="be-flex flag">
-                    <img
-                      src="../assets/images/vn-flag.svg"
-                      alt=""
-                      size="19"
-                      style="width: 22px; height: 22px; margin-right: 4px; margin-left: -2px; filter: brightness(1.1) contrast(1.3)"
-                    />
-                    <span class="langs" style="">{{ $t('language.vi') }}</span>
-                  </div>
-                </template>
-              </el-option>
-              <div class="suffix" slot="prefix">
-                <img src="../assets/images/us-flag.svg" style="margin-right: 8px; margin-left: 0px; margin-top: 10px" v-if="getIcon === 'us-flag'" alt="" />
-                <img
-                  src="../assets/images/vn-flag.svg"
-                  style="margin-right: 8px; margin-left: 0px; width: 24px; height: 23px; margin-top: 8px; filter: brightness(1.1) contrast(1.3)"
-                  v-else
-                  class="vn-flag"
-                  alt=""
-                />
-              </div>
-            </el-select>
-          </div>
-        </li>
-        <li class="menu-item nav__mobile-item lang2">
-          <div class="language2 language-select-wraper">
-            <el-select v-model="selectLanguage" @click="handleChangeLanguage" placeholder="Choose a language" class="select-language" popper-class="select-language-dropdown">
-              <el-option :label="`${$t('language.en-mobile')}`" value="en">
-                <template>
-                  <div class="be-flex flag" style="justify-content: unset">
-                    <img src="../assets/images/us-flag.svg" alt="" size="14" style="margin-right: 6px; width: 19px; height: 19px; margin-top: 1px" />
-                    <span class="lang">{{ $t('language.en-mobile') }}</span>
-                  </div>
-                </template>
-              </el-option>
-              <el-option :label="`${$t('language.vi-mobile')}`" value="vi">
-                <template>
-                  <div class="be-flex flag" style="justify-content: unset">
-                    <img src="../assets/images/vn-flag.svg" alt="" size="19" style="width: 22px; height: 22px; margin-right: 4px; margin-left: -2px" />
-                    <span class="langs" style="">{{ $t('language.vi-mobile') }}</span>
-                  </div>
-                </template>
-              </el-option>
-              <div class="suffix" slot="prefix">
-                <img src="../assets/images/us-flag.svg" style="margin-right: 8px; margin-left: 0px; margin-top: 10px" v-if="getIcon === 'us-flag'" alt="" />
-                <img src="../assets/images/vn-flag.svg" style="margin-right: 8px; margin-left: 0px; width: 24px; height: 23px; margin-top: 8px" v-else class="vn-flag" alt="" />
-              </div>
-            </el-select>
-          </div>
-        </li> -->
       </ul>
     </div>
   </div>
@@ -204,16 +70,6 @@
         this.$emit('click', name)
         if (name == 'marketplace') {
           this.$router.push({ name: 'MarketPlace' })
-          // if (window.innerWidth < 1250) {
-          //   if (this.getMobileOperatingSystem() === 'Android') {
-          //     window.open('https://play.google.com/store/apps/details?id=vn.beedu.blockchain')
-          //   }
-          //   if (this.getMobileOperatingSystem() === 'iOS') {
-          //     window.open('https://apps.apple.com/us/app/lynkey/id1591160349')
-          //   }
-          // } else {
-          //   this.$router.push({ name: 'MarketPlace' })
-          // }
         } else {
           this.$emit('click', name)
         }
@@ -222,31 +78,6 @@
         this.showContract = false
         this.$emit('hidden-contract')
       },
-      //   changeActive(item) {
-      //     const sackItem = document.querySelector('.sack-item')
-      //     if (window.innerWidth < 1023) {
-      //       sackItem.style.transform = 'translateX(100%)'
-      //     }
-      //     if (item == 0) {
-      //       this.tabActive = 0
-      //     }
-      //     if (item == 1) {
-      //       this.tabActive = 1
-      //     }
-      //     if (item == 2) {
-      //       this.tabActive = 2
-      //     }
-      //     if (item == 3) {
-      //       this.tabActive = 3
-      //     }
-      //     if (item == 4) {
-      //       this.tabActive = 4
-      //     }
-      //     if (item == 5) {
-      //       this.tabActive = 5
-      //     }
-      //   },
-
       handleChangeLanguage(lang) {
         this.$i18n.locale = lang
         window.localStorage.setItem('bc-lang', lang)
