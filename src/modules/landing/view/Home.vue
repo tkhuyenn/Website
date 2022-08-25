@@ -11,8 +11,8 @@
       <LandingMarket ref="marketplace" />
       <LandingExchange ref="exchange" /> -->
     </div>
-    <!-- <LandingTokenomics ref="token" />
-    <LandingFundRaising v-if="show" /> -->
+    <!--  <LandingTokenomics ref="token" /> -->
+    <LandingFundRaising style="margin-bottom: 40px" />
     <!-- <div class="back-blue"> -->
     <!-- <LangdingVesting /> -->
     <!-- </div> -->
@@ -80,7 +80,7 @@
       LandingFooter,
       // LandingMarket,
       // LandingTokenomics,
-      // LandingFundRaising,
+      LandingFundRaising,
       // LandingRoadMap,
       LandingMenu
       // LandingExchange,
@@ -167,14 +167,17 @@
     font-family: archivo-expanded;
     src: url('../../../assets/font/ArchivoExpanded-SemiBold.otf');
   }
+  body {
+    background: #fff;
+  }
   .home-lang {
     * {
-      font-family: 'Archivo', sans-serif;
+      font-family: monospace;
       scroll-behavior: smooth;
     }
-    background: #101828;
     overflow: hidden;
     max-width: 1903px;
+    // text-align: center;
     width: 100%;
     .banner-pri {
       margin-top: 98px;

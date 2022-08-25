@@ -11,19 +11,17 @@
       </div>
       <swiper class="slide" :options="swiperOption">
         <swiper-slide class="project" data-aos="fade-left" data-aos-duration="1000">
-          <router-link :to="{ name: 'ProductDetail' }">
-            <div class="sack-img-dialog po-relative" @click="dialogTableVisibleVanDon = true">
-              <img src="../../../icons/png/clock-1.png" class="img-assets" alt="" />
+          <div class="sack-img-dialog po-relative" @click="dialogTableVisibleVanDon = true">
+            <img src="../../../icons/png/clock-1.png" class="img-assets" alt="" />
+          </div>
+          <div class="des-prj">
+            <div class="price">
+              <p class="text-price">10,000,000</p>
             </div>
-            <div class="des-prj">
-              <div class="price">
-                <p class="text-price">10,000,000</p>
-              </div>
-              <a class="name" style="text-decoration: none" href="http://www.crystalholidaysharbourvandon.com/" target="_blank">
-                <p class="text-name">Đồng hồ cô tiên</p>
-              </a>
-            </div></router-link
-          >
+            <a class="name" style="text-decoration: none" href="http://www.crystalholidaysharbourvandon.com/" target="_blank">
+              <p class="text-name">Đồng hồ cô tiên</p>
+            </a>
+          </div>
         </swiper-slide>
 
         <swiper-slide class="project" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
